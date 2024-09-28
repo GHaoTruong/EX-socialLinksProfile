@@ -1,10 +1,128 @@
+:root {
+  --clr-green: hsl(75, 94%, 57%);
+  --clr-white: hsl(0, 0%, 100%);
+
+  --clr-grey-700: hsl(0, 0%, 20%);
+  --clr-grey-800: hsl(0, 0%, 12%);
+  --clr-grey-900: hsl(0, 0%, 8%);
+
+  --paragraph-font-size: 0.875rem;
+}
+
 @font-face {
-  font-family: "customeFont1";
-  src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+  font-family: "inter-regular";
+  src: url(/assets/fonts/static/Inter-Regular.ttf) format("truetype");
+
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "inter-semiBold";
+  src: url(/assets/fonts/static/Inter-SemiBold.ttf) format("truetype");
+
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "inter-bold";
+  src: url(/assets/fonts/static/Inter-Bold.ttf) format("truetype");
+
+  font-weight: 700;
+  font-style: normal;
 }
 
 body {
+  font-size: 16px;
+  background-color: var(--clr-grey-900);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+main {
 }
 
 main .container {
+  background-color: var(--clr-grey-800);
+  margin: 0;
+  text-align: center;
+  width: 16rem;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.profile {
+}
+
+.profile img {
+  width: 5rem;
+  border-radius: 100px;
+}
+
+.profile h1 {
+  color: var(--clr-white);
+  font-family: "inter-regular";
+  font-size: 1.5rem;
+  margin: 1.5rem 0 0.5rem 0;
+}
+
+.profile .location {
+  color: var(--clr-green);
+  font-family: "inter-semiBold";
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.profile .bio {
+  color: var(--clr-white);
+  font-family: "inter-regular";
+  font-size: var(--paragraph-font-size);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links li {
+  background-color: var(--clr-grey-700);
+  width: 240px;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+.links li a {
+  text-decoration: none;
+  font-family: "inter-bold";
+  font-size: var(--paragraph-font-size);
+  color: var(--clr-white);
+}
+.links li:hover {
+  background-color: var(--clr-green);
+}
+
+/* Media Queries */
+
+/* Mobile */
+@media (width >= 375px) {
+  main .container {
+  }
+}
+
+/* Desktop */
+@media (width >= 1440px) {
+  main .container {
+    width: 20rem;
+  }
 }
