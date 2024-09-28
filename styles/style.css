@@ -94,6 +94,7 @@ main .container {
   margin: 0;
 }
 
+/*
 .links li {
   background-color: var(--clr-grey-700);
   width: 240px;
@@ -101,15 +102,28 @@ main .container {
   border-radius: 8px;
   margin-top: 16px;
 }
+*/
 
-.links li a {
-  text-decoration: none;
+button {
+  border-style: none;
+  background-color: var(--clr-grey-700);
+  color: var(--clr-white);
+  width: 240px;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 16px;
   font-family: "inter-bold";
   font-size: var(--paragraph-font-size);
-  color: var(--clr-white);
 }
-.links li:hover {
+
+button:hover {
   background-color: var(--clr-green);
+  color: black;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #9cc33c;
 }
 
 /* Media Queries */
